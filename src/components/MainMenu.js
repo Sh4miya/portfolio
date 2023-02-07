@@ -7,9 +7,9 @@ function MainMenu() {
     return (
       <>
       <ul className="main-menu">
-        <li className="main-menu"><a className="main-menu main-menu-active" href="/#/home">Home</a></li>
-        <li className="main-menu"><a className="main-menu main-menu-active" href="/#/portfolio">Portfolio</a></li>
-        <li className="main-menu"><a className="main-menu main-menu-active" href="/#/skills">Skills</a></li>
+        <li className="main-menu"><a className="main-menu main-menu-active" href="/portfolio/#/home">Home</a></li>
+        <li className="main-menu"><a className="main-menu main-menu-active" href="/portfolio/#/portfolio">Portfolio</a></li>
+        <li className="main-menu"><a className="main-menu main-menu-active" href="/portfolio/#/skills">Skills</a></li>
       </ul>
         {/* <div className="flex-container-main-menu links">
               <a className="main-menu" href='/home'>Home</a>
