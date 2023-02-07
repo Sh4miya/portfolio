@@ -24,7 +24,7 @@ function Experience(){
 
     return (
       <>
-        <h1 className="space">Portfolio</h1>
+        <h1 className="space">Projects</h1>
         <div className="grid-container">
           <div className="grid-item">
             <ChatAlerts />

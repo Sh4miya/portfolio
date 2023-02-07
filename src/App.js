@@ -3,7 +3,7 @@ import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import MainMenu from './components/MainMenu';
 import Home from './components/Home';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import ParticleBackground from 'react-particle-backgrounds';
@@ -46,7 +46,7 @@ function App() {
       </div>
         <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/Portfolio" element={<Portfolio />} />
+            <Route exact path="/Projects" element={<Projects />} />
             <Route exact path="/Education" element={<Education />} />
             <Route exact path="/Skills" element={<Skills />} />
             <Route exact path="*" element={<Home />} />
