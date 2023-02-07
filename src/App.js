@@ -1,5 +1,5 @@
 import {React} from 'react';
-import { BrowserRouter, HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import MainMenu from './components/MainMenu';
 import Home from './components/Home';
@@ -44,17 +44,13 @@ function App() {
       <div className="background">
         <ParticleBackground settings={settings} />
       </div>
-      <HashRouter>
         <Routes>
-          <Route exact path="/" component={<Home />}>
-            <Route index element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route exact path="/Portfolio" element={<Portfolio />} />
             <Route exact path="/Education" element={<Education />} />
             <Route exact path="/Skills" element={<Skills />} />
             <Route exact path="*" element={<Home />} />
-          </Route>
         </Routes>
-      </HashRouter>
     </div>
   );
 }
