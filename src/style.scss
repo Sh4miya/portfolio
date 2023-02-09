@@ -31,7 +31,7 @@ body {
   }
 
   p{
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
   
@@ -53,11 +53,9 @@ body {
   //   width: 90%;
   // }
 
-  ul.main-menu, ul.main-menu:link, ul.main-menu:visited{
+  ul.main-menu, ul.main-menu:link {
     color: #fff;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #2a2a2b;
     position: fixed;
@@ -72,9 +70,13 @@ body {
   li.main-menu a.main-menu {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 60%;
+  }
+
+  a.main-menu:hover{
+    background-color: #4b4b4d;
   }
 
   .email{
@@ -99,6 +101,13 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-right: 15%;
+  }
+
+  .home-flex-container-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   
   .links {
@@ -170,7 +179,7 @@ body {
   }
 
   .ca-images{
-    margin-top: 13%;
+    margin-top: 5%;
     max-height: 200px;
     max-width: 200px;
     width: auto;
@@ -185,7 +194,7 @@ body {
   }
 
   .dd-images{
-    margin-top: 16%;
+    margin-top: 5%;
     max-height: 200px;
     max-width: 200px;
     width: auto;
@@ -193,7 +202,7 @@ body {
   }
 
   .poly-image{
-    margin-top: 50%;
+    margin-top: 10%;
     max-height: 400px;
     max-width: 400px;
     width: auto;
@@ -208,7 +217,7 @@ body {
 
     .grid-container {
       display: grid;
-      grid-template-columns: 30% 10%;
+      grid-template-columns: 35% 15%;
       justify-content: center; 
       row-gap: 50px;
       padding: 0%;
