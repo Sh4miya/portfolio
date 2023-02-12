@@ -417,6 +417,7 @@ body {
     margin-top: 28px;
     width: 17%;
     @media #{$phone}{
+      margin-top: 27px;
       width: 40%
     }
     @media #{$tablet}{
