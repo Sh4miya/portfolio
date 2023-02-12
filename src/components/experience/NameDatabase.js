@@ -5,7 +5,7 @@ function NameDatabase(){
     return (
       <>
 
-        <h2 className="no-gap-after">Name Database</h2>
+        <h2 className="no-gap-after center">Name Database</h2>
         <h3>
           Blackout Rugby Website <br /> Task Responsibilities:
         </h3>

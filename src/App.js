@@ -15,28 +15,21 @@ function App() {
   const location = useLocation();
 
   const settings = {
-    canvas: {
-      canvasFillSpace: true,
-      width: 800,
-      height: 800,
-      useBouncyWalls: true
-    },
     particle: {
-      particleCount: 50,
-      color: '#2a2a2b',
-      minSize: 2,
-      maxSize: 5
+      particleCount: 150,
+      color: '#fff',
+      maxSize: 3
     },
     velocity: {
-      directionAngle: 0,
-      directionAngleVariance: 360,
-      minSpeed: 0,
-      maxSpeed: 2
+      directionAngle: 180,
+      directionAngleVariance: 60,
+      minSpeed: 0.1,
+      maxSpeed: 0.3
     },
     opacity: {
       minOpacity: 0,
-      maxOpacity: 0.25,
-      opacityTransitionTime: 5000
+      maxOpacity: 0.4,
+      opacityTransitionTime: 10000
     }
   }
 

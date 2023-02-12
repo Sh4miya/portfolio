@@ -12,14 +12,11 @@ function Home() {
       initial={{opacity: 0}}
       animate={{opacity:1}}
       exit={{opacity:0}}>
-      <div className="header-container">
-        <h2 className="header-content"></h2>
-      </div>
         <img className="profile-picture" src={profile} alt="Profile Picture" />
         <div className="home-flex-container-text">
           <h1>Lizzie Corbett</h1>
-          <h2 className="skills-text">Junior Full Stack Developer</h2>
-          <ul className="home-desc">
+          <h2 className="center">Junior Full Stack Developer</h2>
+          <ul className="center no-bullet">
             <li>Ngati Porou</li>
             <li>Hamilton, New Zealand</li>
             <li>
@@ -39,10 +36,10 @@ function Home() {
           </p>
           </div>
         <Education />
-      <div className="footer-container">
-        <h2 className="footer-content"></h2>
-      </div>
       </motion.div>
+      <div className="footer-container">
+        <p></p>
+      </div>
     </>
   );
 }

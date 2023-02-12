@@ -15,6 +15,8 @@ function Other(){
             <li>General backend bug fixes</li>
             <li>Updated and maintained in-game content</li>
             <li className="gap-after">Assist with game monetisation and game design</li>
+            <li className="no-bullet"><br/></li>
+            <li className="no-bullet"><br/></li>
         </ul>
 
         </>

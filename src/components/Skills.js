@@ -14,9 +14,8 @@ function Skills() {
       exit={{opacity:0}}
       >
       <div className="header-container">
-        <h2 className="header-content"></h2>
+        <h1 className="header-content">Skills</h1>
       </div>
-      <h1 className="header-content no-gap-after">Skills</h1>
       <div className="bar-title-container">
         <h3 className="no-gap-after">Web Design</h3>      
           <div className="progress-bar-container"> 
@@ -64,12 +63,12 @@ function Skills() {
           <li>Technical writing to GMP stardards</li>
           <li>Team player</li>
           <li>Hardworking</li>
-          <li>Focused <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /></li>
+          <li>Focused</li>
         </ul>
-      <div className="footer-container">
-        <h2 className="footer-content"></h2>
-      </div>
       </motion.div>
+      <div className="footer-container">
+        <p></p>
+      </div>
     </>
   );
 }

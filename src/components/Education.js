@@ -21,6 +21,9 @@ function Education(){
           <li className="gap-after">A pathway for high school students to gain tertiary education during Year 12</li>
           <li className="gap-after">Massey University Vice Chancellors Award 2002/2003</li>
           <li className="gap-after">NCEA Level Two</li>
+          <li><br/></li>
+          <li><br/></li>
+          <li><br/></li>
         </ul>
       </>
     );

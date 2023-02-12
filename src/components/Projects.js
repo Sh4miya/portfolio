@@ -29,10 +29,9 @@ function Experience(){
         animate={{opacity:1}}
         exit={{opacity:0}}
         >
-      <div className="header-container">
-        <h2 className="header-content"></h2>
-      </div>
-        <h1 className="header-content">Projects</h1>
+        <div className="header-container">
+          <h1 className="header-content gap-after">Projects</h1>
+        </div>
           <div className="grid-container">
             <div className="grid-item">
               <ChatAlerts />
@@ -148,10 +147,10 @@ function Experience(){
               <Other />
             </div>
           </div>
-        <div className="footer-container">
-          <h2 className="footer-content"></h2>
-        </div>
         </motion.div>
+        <div className="footer-container">
+          <p></p>
+        </div>
       </>
     );
 
