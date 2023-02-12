@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <MainMenu />
-      <div className="background">
+      <div className="background-animation">
         <ParticleBackground settings={settings} />
       </div>
       <AnimatePresence>

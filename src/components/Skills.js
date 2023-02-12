@@ -13,14 +13,17 @@ function Skills() {
       animate={{opacity:1}}
       exit={{opacity:0}}
       >
-      <h1 className="skills-title no-gap-after">Skills</h1>
+      <div className="header-container">
+        <h2 className="header-content"></h2>
+      </div>
+      <h1 className="header-content no-gap-after">Skills</h1>
       <div className="bar-title-container">
         <h3 className="no-gap-after">Web Design</h3>      
           <div className="progress-bar-container"> 
             <ProgressBar percent={70} />
           </div>
       </div>
-        <ul className="skills-text">
+        <ul className="center no-bullet">
           <li>CSS / SCSS</li>
           <li>HTML</li>
           <li>Javascript</li>
@@ -32,7 +35,7 @@ function Skills() {
             <ProgressBar percent={60} />
           </div>
         </div>
-        <ul className="skills-text">
+        <ul className="center no-bullet">
           <li>C#</li>
           <li>GDScript</li>
           <li>Node.js</li>
@@ -45,7 +48,7 @@ function Skills() {
             <ProgressBar percent={80} />
           </div>
         </div>
-        <ul className="skills-text">
+        <ul className="center no-bullet">
           <li>Agile</li>
           <li>Kanban</li>
           <li>Scrum</li>
@@ -56,13 +59,16 @@ function Skills() {
             <ProgressBar percent={90} />
           </div>
         </div>
-        <ul className="skills-text">
+        <ul className="center no-bullet">
           <li>Excellent verbal and written communication</li>
           <li>Technical writing to GMP stardards</li>
           <li>Team player</li>
           <li>Hardworking</li>
-          <li>Focused</li>
+          <li>Focused <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /></li>
         </ul>
+      <div className="footer-container">
+        <h2 className="footer-content"></h2>
+      </div>
       </motion.div>
     </>
   );

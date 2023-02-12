@@ -1,3 +1,9 @@
+//sizes
+$phone: 'only screen and (max-width : 480px)';
+$tablet: 'only screen and (max-width : 768px)';
+$laptop: 'only screen and (max-width : 1024px)';
+$standard: 'only screen and (min-width: 768px) and (max-width: 3840px)';
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,10 +30,21 @@ body {
   h2 {
     margin-top: 0;
     text-align: left;
+    @media #{$phone}{
+      text-align: center;
+    }
   }
 
   h3{
     text-align: left;
+
+    @media #{$phone}{
+      text-align: center;
+    }
+  }
+
+  h3.center{
+    text-align: center;
   }
 
   p{
@@ -61,6 +78,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
 
   li.main-menu {
@@ -73,6 +91,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     width: 60%;
+    z-index: 1;
   }
 
   a.main-menu:hover{
@@ -104,6 +123,40 @@ body {
     margin-right: 15%;
   }
 
+  .name-database-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul.left-align{
+    text-align: left;
+    @media #{$phone}{
+      text-align: center;
+      list-style-type: none;
+    }
+  }
+
+  li.chat-alerts{
+    margin-left: 2%;
+  }
+
+  li.no-bullet{
+    list-style-type: none;
+  }
+
+  li.bold{
+    font-weight: bold;
+  }
+
+  ul.center{
+    text-align: center;
+  }
+
+  ul.no-bullet{
+    list-style-type: none;
+  }
+
   .home-flex-container-text{
     display: flex;
     flex-direction: column;
@@ -114,29 +167,17 @@ body {
     font-family: 'Copperplate', fantasy;
   }
 
-  [class*="profile-"]{
-    width: 100%;
-  }
-  
   .profile-picture{
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     height: 175px;
     width: 175px;
     border-radius: 60%;
-  }
-
-  @media only screen and (min-width: 768px){
-    .profile-picture{
-      margin-top: 5%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 175px;
-      width: 175px;
-      border-radius: 60%;
+    z-index: 1;
+    @media #{$tablet} {
+      margin-top: 15%;
     }
-
   }
   
   .content {
@@ -151,17 +192,14 @@ body {
       margin-bottom: 20px !important;
   }
 
-  [class*="space"]{
-    width: 100%;
-    margin-top: 15%;
-  }
-
-  @media only screen and (min-width: 768px){
-    .space{
-      margin-top: 4%;
+  .space{
+    margin-top: 4%;
+    @media #{$tablet} {
+      width: 100%;
+      margin-top: 15%;
     }
   }
-  
+
   .center {
     display: block;
     margin-left: auto;
@@ -179,11 +217,17 @@ body {
   }
 
   .ca-images{
-    margin-top: 5%;
     max-height: 200px;
     max-width: 200px;
     width: auto;
     height: auto;
+    @media #{$phone}{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media #{$standard}{
+      margin-top: 4%;
+    }
   }
 
   .nd-images{
@@ -191,45 +235,67 @@ body {
     max-width: 200px;
     width: auto;
     height: auto;
+    @media #{$phone}{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .dd-images{
-    margin-top: 5%;
     max-height: 200px;
     max-width: 200px;
     width: auto;
     height: auto;
+    @media #{$phone}{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media #{$standard}{
+      margin-top: 4%;
+    }
   }
 
   .poly-image{
-    margin-top: 10%;
     max-height: 400px;
     max-width: 400px;
     width: auto;
     height: auto;
+    @media #{$phone}{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media #{$standard}{
+      margin-top: 20%;
+    }
+
   }
 
-  [class*="grid-"]{
-    width: 100%;
-  }
+  .grid-container {
+    display: grid;
+    justify-content: center;
 
-  @media only screen and (min-width: 768px) {
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: 35% 15%;
-      justify-content: center; 
-      row-gap: 50px;
+    @media #{$standard}{
+      grid-template-columns: 50% 15%;
+      row-gap: 1vw;
+      column-gap: 1vw;
       padding: 0%;
       margin-bottom: 10px;
     }
+    @media #{$phone}{
+      grid-template-columns: 80%;
+      row-gap: 1vw;
+      column-gap: 1vw;
+      padding: 0%;
+      margin-bottom: 10px;
+    }
+  }
 
     .grid-item {
-      background-color: rgba(255, 255, 255, 0.8);
+      // background-color: rgba(255, 255, 255, 0.8);
       // border: 1px solid rgba(0, 0, 0, 0.8);
       padding: 10px;
     }
-  }
+
 
   .progress-bar-container{
     margin-top: 28px;
@@ -248,17 +314,23 @@ body {
   .skills-text{
     text-align: center;
     list-style: none;
-  }
-
-  [class*="skills-title"]{
     width: 100%;
-    margin-top: 15%;
+    @media #{$phone}{
+      width: 100%;
+      margin-top: 15%;
+    }
+    @media #{$standard}{
+      margin-top: 0%;
+    }
   }
 
-  @media only screen and (min-width: 768px) {
-    .skills-title{
-      margin-top: 5%;
-      text-align: center;
+  .skills-title{
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+    @media #{$phone}{
+      width: 100%;
+      margin-top: 20%;
     }
   }
 
@@ -269,13 +341,56 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    @media #{$phone}{
+      width: 90%;
+    }
   }
 
-  .background{
+  .background-animation{
     position: absolute;
     z-index: -1;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
+
+  .background-container{
+    background: linear-gradient(black, white);
+    height: 100%;
+    opacity: 0.3;
+    width: 100%;
+  }
+
+  .header-container{
+    background: linear-gradient(#4b4b4d, white);
+    color: black;
+    margin-top: 1%;
+    @media #{$phone}{
+      margin-top: 11%;   
+    }
+  }
+
+  .header-content{
+    height: 75px;
+    text-align: center;
+    margin-top: 1.5%;
+    @media #{$phone}{
+      margin-top: 10%;
+    }
+  }
+
+  .footer-container{
+    background: linear-gradient(white, #4b4b4d);
+    margin: 0;
+  }
+
+  .footer-content{
+    height: 55px;
+    text-align: center;
+    margin: 0;
+    @media #{$phone}{
+      margin-bottom: 0%;
+    }
+  }
+

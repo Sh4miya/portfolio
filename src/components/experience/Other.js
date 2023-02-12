@@ -7,8 +7,7 @@ function Other(){
 
         <h2 className="no-gap-after">Additional Experience</h2>
         <h3>Blackout Games:</h3>
-        <div className="flex-container-text">
-        <ul>
+        <ul className="left-align">
             <li>AWS: S3, DynamoDB</li>
             <li>Data Analytics: Created measurements to monitor user premium currency expenses and income</li>
             <li>Discord / Community Management</li>
@@ -17,7 +16,7 @@ function Other(){
             <li>Updated and maintained in-game content</li>
             <li className="gap-after">Assist with game monetisation and game design</li>
         </ul>
-        </div>
+
         </>
     );
 

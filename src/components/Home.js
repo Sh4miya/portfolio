@@ -12,6 +12,9 @@ function Home() {
       initial={{opacity: 0}}
       animate={{opacity:1}}
       exit={{opacity:0}}>
+      <div className="header-container">
+        <h2 className="header-content"></h2>
+      </div>
         <img className="profile-picture" src={profile} alt="Profile Picture" />
         <div className="home-flex-container-text">
           <h1>Lizzie Corbett</h1>
@@ -36,6 +39,9 @@ function Home() {
           </p>
           </div>
         <Education />
+      <div className="footer-container">
+        <h2 className="footer-content"></h2>
+      </div>
       </motion.div>
     </>
   );
