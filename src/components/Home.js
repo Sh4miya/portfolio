@@ -12,6 +12,7 @@ function Home() {
       initial={{opacity: 0}}
       animate={{opacity:1}}
       exit={{opacity:0}}>
+      <div className="header-container" />
         <img className="profile-picture" src={profile} alt="Profile Picture" />
         <div className="home-flex-container-text">
           <h1>Lizzie Corbett</h1>

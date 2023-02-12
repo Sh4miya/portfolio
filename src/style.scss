@@ -140,6 +140,9 @@ body {
 
   .header-container{
     padding-top: 1px;
+    @media #{$phone} {
+      padding-top: 10%;
+    }
   }
 
   .header-content{
@@ -246,18 +249,18 @@ body {
   }
 
   .profile-picture{
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     height: 175px;
     width: 175px;
     border-radius: 60%;
-    z-index: 1;
+    // z-index: 1;
     @media #{$phone} {
       margin-top: 10%;
     }
     @media #{$tablet} {
-      margin-top: 25%;
+      margin-top: 15%;
     }
     @media #{$laptop}{
       margin-top: 12%;
