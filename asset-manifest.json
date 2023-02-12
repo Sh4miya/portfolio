@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2903fd16.css",
+    "main.css": "/portfolio/static/css/main.45e83f80.css",
     "main.js": "/portfolio/static/js/main.68e8d5b3.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/message-ingame.png": "/portfolio/static/media/message-ingame.5f0613513aa567e37583.png",
@@ -15,12 +15,12 @@
     "static/media/polymorphism-ss.jpg": "/portfolio/static/media/polymorphism-ss.3fd3869d54cb533d1a86.jpg",
     "static/media/message-website.png": "/portfolio/static/media/message-website.352f9b58b814c5cbc679.png",
     "index.html": "/portfolio/index.html",
-    "main.2903fd16.css.map": "/portfolio/static/css/main.2903fd16.css.map",
+    "main.45e83f80.css.map": "/portfolio/static/css/main.45e83f80.css.map",
     "main.68e8d5b3.js.map": "/portfolio/static/js/main.68e8d5b3.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2903fd16.css",
+    "static/css/main.45e83f80.css",
     "static/js/main.68e8d5b3.js"
   ]
 }
