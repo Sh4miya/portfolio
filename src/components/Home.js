@@ -23,6 +23,8 @@ function Home() {
             <li>
               <a className="email" href="mailto:lizzie.corbett04@gmail.com">E-mail</a>
               <a href="https://github.com/Sh4miya">Github</a>
+              <a href="https://www.linkedin.com/in/lizzie-corbett/">LinkedIn</a>
+              <a href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view">CV</a>
             </li>
           </ul>
           <p className="gap-after">
