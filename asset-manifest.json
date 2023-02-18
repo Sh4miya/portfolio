@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.45e83f80.css",
-    "main.js": "/portfolio/static/js/main.89573522.js",
+    "main.css": "/portfolio/static/css/main.a4cbb9aa.css",
+    "main.js": "/portfolio/static/js/main.39e0558a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/message-ingame.png": "/portfolio/static/media/message-ingame.5f0613513aa567e37583.png",
     "static/media/dangerous-dag-title.jpg": "/portfolio/static/media/dangerous-dag-title.09440322ec2e1999588d.jpg",
     "static/media/dag-2.png": "/portfolio/static/media/dag-2.f0fbf28de41bd785070d.png",
     "static/media/dag-1.jpg": "/portfolio/static/media/dag-1.c7249d213fb4de0a1b6f.jpg",
     "static/media/profile.jpg": "/portfolio/static/media/profile.b4684cf4c4ebcac410bc.jpg",
+    "static/media/email.png": "/portfolio/static/media/email.79b3e98131a972a6d554.png",
     "static/media/name-database-1.png": "/portfolio/static/media/name-database-1.3bffbab2ebe10f1ae85a.png",
     "static/media/chat-alert-messages.png": "/portfolio/static/media/chat-alert-messages.f25e46abf74b0b0b704d.png",
     "static/media/name-database-3.png": "/portfolio/static/media/name-database-3.1e416da998aa1c131998.png",
+    "static/media/cv.png": "/portfolio/static/media/cv.e8b8dc2a79be365774c8.png",
     "static/media/name-database-2.png": "/portfolio/static/media/name-database-2.32750fc58fee2d464dc1.png",
     "static/media/polymorphism-ss.jpg": "/portfolio/static/media/polymorphism-ss.3fd3869d54cb533d1a86.jpg",
     "static/media/message-website.png": "/portfolio/static/media/message-website.352f9b58b814c5cbc679.png",
     "index.html": "/portfolio/index.html",
-    "main.45e83f80.css.map": "/portfolio/static/css/main.45e83f80.css.map",
-    "main.89573522.js.map": "/portfolio/static/js/main.89573522.js.map",
+    "main.a4cbb9aa.css.map": "/portfolio/static/css/main.a4cbb9aa.css.map",
+    "main.39e0558a.js.map": "/portfolio/static/js/main.39e0558a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45e83f80.css",
-    "static/js/main.89573522.js"
+    "static/css/main.a4cbb9aa.css",
+    "static/js/main.39e0558a.js"
   ]
 }
