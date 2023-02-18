@@ -29,14 +29,14 @@ function Experience(){
         animate={{opacity:1}}
         exit={{opacity:0}}
         >
-        <div className="header-container">
+        <div className="header-container fade-in">
           <h1 className="header-content gap-after">Projects</h1>
         </div>
-          <div className="grid-container">
-            <div className="grid-item slide-up">
+          <div className="grid-container fade-in">
+            <div className="grid-item">
               <ChatAlerts />
             </div>
-            <div className="grid-item slide-up">
+            <div className="grid-item">
               <div className="ca-images">
                 <ModalImage
                   small={chatalerts1}
@@ -65,10 +65,10 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <NameDatabase />
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <div className="nd-images">
                 <ModalImage
                   small={namedatabase1}
@@ -97,10 +97,10 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <DangerousDag />
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <div className="dd-images">
                 <ModalImage
                   small={dagtitle}
@@ -129,10 +129,10 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <PolymorphismTask />
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <div className="poly-image">
                 <ModalImage
                   small={polytask}
@@ -143,7 +143,7 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item slide-up anim-delay">
+            <div className="grid-item">
               <Other />
             </div>
           </div>

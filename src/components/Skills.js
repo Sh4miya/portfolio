@@ -13,52 +13,52 @@ function Skills() {
       animate={{opacity:1}}
       exit={{opacity:0}}
       >
-      <div className="header-container">
+      <div className="header-container fade-in">
         <h1 className="header-content">Skills</h1>
       </div>
-      <div className="bar-title-container slide-up">
+      <div className="bar-title-container fade-in">
         <h3 className="no-gap-after">Web Design</h3>      
           <div className="progress-bar-container"> 
             <ProgressBar percent={70} />
           </div>
       </div>
-        <ul className="center no-bullet slide-up anim-delay">
+        <ul className="center no-bullet fade-in">
           <li>CSS / SCSS</li>
           <li>HTML</li>
           <li>Javascript</li>
           <li>React</li>
         </ul>
-        <div className="bar-title-container slide-up anim-delay1">
+        <div className="bar-title-container fade-in">
           <h3 className="no-gap-after">Programming</h3>
           <div className="progress-bar-container"> 
             <ProgressBar percent={60} />
           </div>
         </div>
-        <ul className="center no-bullet slide-up anim-delay">
+        <ul className="center no-bullet fade-in">
           <li>C#</li>
           <li>GDScript</li>
           <li>Node.js</li>
           <li>NoSQL</li>
           <li className="gap-after">SQL</li>
         </ul>
-        <div className="bar-title-container slide-up anim-delay1">
+        <div className="bar-title-container fade-in">
         <h3 className="no-gap-after">Workflow</h3>
         <div className="progress-bar-container"> 
             <ProgressBar percent={80} />
           </div>
         </div>
-        <ul className="center no-bullet slide-up anim-delay">
+        <ul className="center no-bullet fade-in">
           <li>Agile</li>
           <li>Kanban</li>
           <li>Scrum</li>
         </ul>
-        <div className="bar-title-container slide-up anim-delay1">
+        <div className="bar-title-container fade-in">
         <h3 className="no-gap-after">Personal Skills</h3>
         <div className="progress-bar-container"> 
             <ProgressBar percent={90} />
           </div>
         </div>
-        <ul className="center no-bullet slide-up anim-delay">
+        <ul className="center no-bullet fade-in">
           <li>Excellent verbal and written communication</li>
           <li>Technical writing to GMP stardards</li>
           <li>Team player</li>
