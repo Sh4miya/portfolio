@@ -1,10 +1,15 @@
 import React from "react";
 import "../style.scss";
 import profile from "../images/profile.jpg";
+import github from "../images/github-mark.png";
+import linkedin from "../images/In-Blue-40.png";
+import cv from "../images/cv.png";
+import email from "../images/email.png";
 import Education from './Education';
 import { motion } from 'framer-motion';
 
 function Home() {
+
 
   return (
     <>
@@ -13,18 +18,26 @@ function Home() {
       animate={{opacity:1}}
       exit={{opacity:0}}>
       <div className="header-container" />
-        <img className="profile-picture" src={profile} alt="Profile Picture" />
-        <div className="home-flex-container-text">
+        <img className="profile-picture slide-up" src={profile} alt="Profile Picture" />
+        <div className="home-flex-container-text slide-up">
           <h1>Lizzie Corbett</h1>
           <h2 className="center">Junior Full Stack Developer</h2>
           <ul className="center no-bullet">
             <li>Ngati Porou</li>
             <li>Hamilton, New Zealand</li>
             <li>
-              <a className="email" href="mailto:lizzie.corbett04@gmail.com">E-mail</a>
-              <a href="https://github.com/Sh4miya">Github</a>
-              <a href="https://www.linkedin.com/in/lizzie-corbett/">LinkedIn</a>
-              <a href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view">CV</a>
+              <a className="email" href="mailto:lizzie.corbett04@gmail.com">
+              <img className="logo" src={email} alt="E-Mail Logo"></img>
+              </a>
+              <a href="https://github.com/Sh4miya">
+                <img className="logo" src={github} alt="Github Logo"></img>
+              </a>
+              <a href="https://www.linkedin.com/in/lizzie-corbett/">
+              <img className="logo" src={linkedin} alt="LinkedIn Logo"></img>
+              </a>
+              <a href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view">
+                <img className="logo" src={cv} alt="CV Logo"></img>
+              </a>
             </li>
           </ul>
           <p className="gap-after">
@@ -38,7 +51,9 @@ function Home() {
             I also enjoy streaming on Twitch and have participated in Twitch ANZ events such as Grassroots and Te Marama o Maori.
           </p>
           </div>
+          <div className="slide-up anim-delay">
         <Education />
+        </div>
       </motion.div>
       <div className="footer-container">
         <p></p>

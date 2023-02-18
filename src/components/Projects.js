@@ -33,10 +33,10 @@ function Experience(){
           <h1 className="header-content gap-after">Projects</h1>
         </div>
           <div className="grid-container">
-            <div className="grid-item">
+            <div className="grid-item slide-up">
               <ChatAlerts />
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up">
               <div className="ca-images">
                 <ModalImage
                   small={chatalerts1}
@@ -65,10 +65,10 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <NameDatabase />
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <div className="nd-images">
                 <ModalImage
                   small={namedatabase1}
@@ -97,10 +97,10 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <DangerousDag />
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <div className="dd-images">
                 <ModalImage
                   small={dagtitle}
@@ -129,10 +129,10 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <PolymorphismTask />
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <div className="poly-image">
                 <ModalImage
                   small={polytask}
@@ -143,7 +143,7 @@ function Experience(){
                 />
               </div>
             </div>
-            <div className="grid-item">
+            <div className="grid-item slide-up anim-delay">
               <Other />
             </div>
           </div>
