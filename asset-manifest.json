@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a4cbb9aa.css",
-    "main.js": "/portfolio/static/js/main.39e0558a.js",
+    "main.css": "/portfolio/static/css/main.d927a27d.css",
+    "main.js": "/portfolio/static/js/main.9f667ed9.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/message-ingame.png": "/portfolio/static/media/message-ingame.5f0613513aa567e37583.png",
     "static/media/dangerous-dag-title.jpg": "/portfolio/static/media/dangerous-dag-title.09440322ec2e1999588d.jpg",
@@ -17,12 +17,12 @@
     "static/media/polymorphism-ss.jpg": "/portfolio/static/media/polymorphism-ss.3fd3869d54cb533d1a86.jpg",
     "static/media/message-website.png": "/portfolio/static/media/message-website.352f9b58b814c5cbc679.png",
     "index.html": "/portfolio/index.html",
-    "main.a4cbb9aa.css.map": "/portfolio/static/css/main.a4cbb9aa.css.map",
-    "main.39e0558a.js.map": "/portfolio/static/js/main.39e0558a.js.map",
+    "main.d927a27d.css.map": "/portfolio/static/css/main.d927a27d.css.map",
+    "main.9f667ed9.js.map": "/portfolio/static/js/main.9f667ed9.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4cbb9aa.css",
-    "static/js/main.39e0558a.js"
+    "static/css/main.d927a27d.css",
+    "static/js/main.9f667ed9.js"
   ]
 }
