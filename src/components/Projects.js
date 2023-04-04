@@ -5,6 +5,7 @@ import PolymorphismTask from "./experience/PolymorphismTask";
 import Other from "./experience/Other";
 import NameDatabase from "./experience/NameDatabase";
 import ModalImage from "react-modal-image";
+import DailyDeals from "./experience/DailyDeals";
 import '../style.scss';
 import { motion } from 'framer-motion';
 //---images
@@ -27,12 +28,17 @@ function Experience(){
       <motion.div
         initial={{opacity: 0}}
         animate={{opacity:1}}
-        exit={{opacity:0}}
-        >
+        exit={{opacity:0}}>
         <div className="header-container fade-in">
           <h1 className="header-content gap-after">Projects</h1>
         </div>
           <div className="grid-container fade-in">
+          <div className="grid-item">
+              <DailyDeals />
+          </div>
+          <div className="grid-item">
+          
+          </div>
             <div className="grid-item">
               <ChatAlerts />
             </div>

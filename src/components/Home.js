@@ -41,19 +41,14 @@ function Home() {
             </li>
           </ul>
           <p className="gap-after">
-            I am currently a Junior Full Stack Developer at Blackout Games after
-            completing a successful internship through Waikato Institute of
-            Technology (Te Pukenga). <br /> As an aspiring software developer I enjoy getting my hands dirty learning code,
-            tackling any big or small challenges, and at the end of the day, giving my best to get the job done. <br /> <br />
+            I enjoy getting my hands dirty learning code, tackling any big or small challenges, 
+            and at the end of the day, giving my best to get the job done. <br />
             In my free time I enjoy binge watching TV shows, cooking, going to the gym, 
             gaming and watching sports such as rugby, NBA, NFL, softball and baseball. <br />
             <br />
             I also enjoy streaming on Twitch and have participated in Twitch ANZ events such as Grassroots and Te Marama o Maori.
           </p>
           </div>
-          <div className="slide-up anim-delay">
-        <Education />
-        </div>
       </motion.div>
       <div className="footer-container">
         <p></p>
