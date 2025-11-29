@@ -17,12 +17,13 @@ function Skills() {
       </div>
       <div className="grid-container skills-grid-container fade-in">
         <div className="grid-item">
-          <h2 className="no-gap-after">Web Design</h2>
+          <h2 className="no-gap-after">Personal Skills</h2>
           <ul className="skills-list">
-            <li>Javascript</li>
-            <li>CSS / SCSS</li>
-            <li>HTML</li>
-            <li>React</li>
+            <li>Excellent verbal and written communication</li>
+            <li>Technical writing to GMP stardards</li>
+            <li>Team player</li>
+            <li>Hardworking</li>
+            <li>Focused</li>
           </ul>
         </div>
         <div className="grid-item">
@@ -36,21 +37,20 @@ function Skills() {
           </ul>
         </div>
         <div className="grid-item">
+          <h2 className="no-gap-after">Web Design</h2>
+          <ul className="skills-list">
+            <li>Javascript</li>
+            <li>CSS / SCSS</li>
+            <li>HTML</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div className="grid-item">
           <h2 className="no-gap-after">Workflow</h2>
           <ul className="skills-list">
             <li>Agile</li>
             <li>Kanban</li>
             <li>Scrum</li>
-          </ul>
-        </div>
-        <div className="grid-item">
-          <h2 className="no-gap-after">Personal Skills</h2>
-          <ul className="skills-list">
-            <li>Excellent verbal and written communication</li>
-            <li>Technical writing to GMP stardards</li>
-            <li>Team player</li>
-            <li>Hardworking</li>
-            <li>Focused</li>
           </ul>
         </div>
       </div>

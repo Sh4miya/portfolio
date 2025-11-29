@@ -4,7 +4,7 @@ import '../../style.scss';
 function DailyDeals(){
     return(
     <>
-    <h2 className="no-gap-after">Implement a Daily Deals System</h2>
+    <h2 className="no-gap-after">Implement Daily Deals</h2>
     <h3>Blackout Games<br/> Task Responsibilities:</h3>
     <ul className="left-align">
           <li>Create a daily deal option of all in-game store items</li>

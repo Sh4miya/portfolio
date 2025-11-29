@@ -4,7 +4,7 @@ import '../../style.scss';
 function ChatAlerts(){
     return (
       <>
-      <h2 className="no-gap-after">Chat Alerts System</h2>
+      <h2 className="no-gap-after">Implement Chat Alerts</h2>
       <h3>Blackout Rugby Website <br/> Task Responsibilities:</h3>
         <ul className="left-align">
           <li>Create a REST API endpoint for chat alerts</li>

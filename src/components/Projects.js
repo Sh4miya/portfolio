@@ -6,6 +6,7 @@ import NameDatabase from "./experience/NameDatabase";
 import ImageModal from "./ImageModal";
 import DailyDeals from "./experience/DailyDeals";
 import PlayerWon from "./experience/PlayerWon";
+import XsollaWebstore from "./experience/XsollaWebstore";
 import '../style.scss';
 import { motion } from 'framer-motion';
 //---images
@@ -22,6 +23,8 @@ import dailyDeals1 from '../images/daily-deals1.png';
 import groundsShop from '../images/grounds-shop-new-alert.png';
 import playerWonAds from '../images/player-won-ads.png';
 import playerWonAdsSuccess from '../images/player-won-ads-success.png';
+import xsollaWebstore1 from '../images/xsolla-webstore-1.png';
+import xsollaWebstore2 from '../images/xsolla-webstore-2.png';
 
 
 
@@ -37,6 +40,21 @@ function Experience(){
           <h1 className="header-content gap-after">Projects</h1>
         </div>
           <div className="grid-container fade-in">
+          <div className="grid-item">
+              <XsollaWebstore />
+            </div>
+            <div className="grid-item">
+              <div className="dd-images">
+                <ImageModal src={xsollaWebstore1} alt="Xsolla Webstore">
+                  <img src={xsollaWebstore1} alt="Xsolla Webstore" />
+                </ImageModal>
+              </div>
+              <div className="dd-images">
+                <ImageModal src={xsollaWebstore2} alt="Xsolla Webstore">
+                  <img src={xsollaWebstore2} alt="Xsolla Webstore" />
+                </ImageModal>
+              </div>
+            </div>
           <div className="grid-item">
               <PlayerWon />
             </div>
