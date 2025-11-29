@@ -1,22 +1,41 @@
-import {React} from "react";
+import React from "react";
 import '../style.scss';
-import {motion} from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 
 
 function MainMenu() {
+    const location = useLocation();
 
     return (
       <>
-      <ul className="main-menu">       
-        <li className="main-menu"><a className="main-menu" href="/portfolio/#/home">Home</a></li>
-        <li className="main-menu"><a className="main-menu" href="/portfolio/#/projects">Projects</a></li>
-        <li className="main-menu"><a className="main-menu" href="/portfolio/#/skills">Skills</a></li>
-      </ul>
-        {/* <div className="flex-container-main-menu links">
-              <a className="main-menu" href='/home'>Home</a>
-              <a className="main-menu" href='/portfolio'>Portfolio</a>
-              <a className="main-menu" href='/skills'>Skills</a>
-        </div> */}
+      <nav className="main-menu-wrapper">
+        <ul className="main-menu">       
+          <li className="main-menu">
+            <Link 
+              className={`main-menu ${location.pathname === '/' || location.pathname === '' ? 'active' : ''}`}
+              to="/"
+            >
+              Home
+            </Link>
+          </li>
+          <li className="main-menu">
+            <Link 
+              className={`main-menu ${location.pathname === '/Projects' ? 'active' : ''}`}
+              to="/Projects"
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="main-menu">
+            <Link 
+              className={`main-menu ${location.pathname === '/Skills' ? 'active' : ''}`}
+              to="/Skills"
+            >
+              Skills
+            </Link>
+          </li>
+        </ul>
+      </nav>
       </>
     );
 

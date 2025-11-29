@@ -8,6 +8,68 @@ body {
   
 }
 
+/* React Modal Image Styles - Force full page overlay */
+body > .ril__outer {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 99999 !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.ril__outer {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 99999 !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.ril__inner {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 100000 !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+  margin: 0 !important;
+}
+
+.ril__image {
+  cursor: pointer;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+}
+
+.ril__imagePrev,
+.ril__imageNext {
+  z-index: 100001 !important;
+}
+
+.ril__toolbar {
+  z-index: 100002 !important;
+}
+
+.ril__closeButton {
+  z-index: 100003 !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -94,3 +156,18 @@ a.main-menu:link, a.main-menu:visited{
 }
 
 /* -----Progress Bar------ */
+/* Override react-step-progress-bar colors to white */
+.rs-progress-bar-fill,
+.rs-progress-bar .rs-progress-bar-fill,
+div.rs-progress-bar-fill,
+[class*="rs-progress-bar-fill"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
+/* Override inline styles if library sets them */
+.rs-progress-bar-fill[style*="background"],
+.rs-progress-bar-fill[style*="background-color"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}

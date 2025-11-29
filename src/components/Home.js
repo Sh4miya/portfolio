@@ -1,11 +1,10 @@
 import React from "react";
 import "../style.scss";
-import profile from "../images/profile.jpg";
+import profile from "../images/profile_picture_2.jpg";
 import github from "../images/github-mark.png";
 import linkedin from "../images/In-Blue-40.png";
 import cv from "../images/cv.png";
 import email from "../images/email.png";
-import Education from './Education';
 import { motion } from 'framer-motion';
 
 function Home() {
@@ -18,24 +17,24 @@ function Home() {
       animate={{opacity:1}}
       exit={{opacity:0}}>
       <div className="header-container" />
-        <img className="profile-picture slide-up" src={profile} alt="Profile Picture" />
-        <div className="home-flex-container-text slide-up">
+        <img className="profile-picture" src={profile} alt="" />
+        <div className="home-flex-container-text">
           <h1>Lizzie Corbett</h1>
-          <h2 className="center">Junior Full Stack Developer</h2>
-          <ul className="center no-bullet">
-            <li>Ngati Porou</li>
-            <li>Hamilton, New Zealand</li>
-            <li>
-              <a className="email" href="mailto:lizzie.corbett04@gmail.com">
+          <h2 className="center">Intermediate Full Stack Developer</h2>
+          <ul className="center no-bullet home-info">
+            <li className="home-info-item">Ngati Porou</li>
+            <li className="home-info-item">Hamilton, New Zealand</li>
+            <li className="social-links">
+              <a className="email" href="mailto:lizzie.corbett04@gmail.com" aria-label="Email">
               <img className="logo" src={email} alt="E-Mail Logo"></img>
               </a>
-              <a href="https://github.com/Sh4miya">
+              <a href="https://github.com/Sh4miya" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                 <img className="logo" src={github} alt="Github Logo"></img>
               </a>
-              <a href="https://www.linkedin.com/in/lizzie-corbett/">
+              <a href="https://www.linkedin.com/in/lizzie-corbett/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <img className="logo" src={linkedin} alt="LinkedIn Logo"></img>
               </a>
-              <a href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view">
+              <a href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view" aria-label="CV" target="_blank" rel="noopener noreferrer">
                 <img className="logo" src={cv} alt="CV Logo"></img>
               </a>
             </li>
@@ -50,9 +49,6 @@ function Home() {
           </p>
           </div>
       </motion.div>
-      <div className="footer-container">
-        <p></p>
-      </div>
     </>
   );
 }
