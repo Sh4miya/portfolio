@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d927a27d.css",
-    "main.js": "/portfolio/static/js/main.7c07b0c3.js",
+    "main.css": "/portfolio/static/css/main.ed18bfa2.css",
+    "main.js": "/portfolio/static/js/main.0ebdd606.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/grounds-shop-new-alert.png": "/portfolio/static/media/grounds-shop-new-alert.92a4d84ecc816202a882.png",
+    "static/media/player-won-ads-success.png": "/portfolio/static/media/player-won-ads-success.9a90eb3377dff2226a3f.png",
     "static/media/message-ingame.png": "/portfolio/static/media/message-ingame.5f0613513aa567e37583.png",
+    "static/media/daily-deals1.png": "/portfolio/static/media/daily-deals1.dd559becac7345518e7d.png",
+    "static/media/player-won-ads.png": "/portfolio/static/media/player-won-ads.a4cb7e0103be8e8ee0e4.png",
+    "static/media/profile_picture_2.jpg": "/portfolio/static/media/profile_picture_2.d70d56a0b037e7d93448.jpg",
     "static/media/dangerous-dag-title.jpg": "/portfolio/static/media/dangerous-dag-title.09440322ec2e1999588d.jpg",
     "static/media/dag-2.png": "/portfolio/static/media/dag-2.f0fbf28de41bd785070d.png",
     "static/media/dag-1.jpg": "/portfolio/static/media/dag-1.c7249d213fb4de0a1b6f.jpg",
-    "static/media/profile.jpg": "/portfolio/static/media/profile.b4684cf4c4ebcac410bc.jpg",
     "static/media/email.png": "/portfolio/static/media/email.79b3e98131a972a6d554.png",
     "static/media/name-database-1.png": "/portfolio/static/media/name-database-1.3bffbab2ebe10f1ae85a.png",
     "static/media/chat-alert-messages.png": "/portfolio/static/media/chat-alert-messages.f25e46abf74b0b0b704d.png",
     "static/media/name-database-3.png": "/portfolio/static/media/name-database-3.1e416da998aa1c131998.png",
     "static/media/cv.png": "/portfolio/static/media/cv.e8b8dc2a79be365774c8.png",
     "static/media/name-database-2.png": "/portfolio/static/media/name-database-2.32750fc58fee2d464dc1.png",
-    "static/media/polymorphism-ss.jpg": "/portfolio/static/media/polymorphism-ss.3fd3869d54cb533d1a86.jpg",
     "static/media/message-website.png": "/portfolio/static/media/message-website.352f9b58b814c5cbc679.png",
     "index.html": "/portfolio/index.html",
-    "main.d927a27d.css.map": "/portfolio/static/css/main.d927a27d.css.map",
-    "main.7c07b0c3.js.map": "/portfolio/static/js/main.7c07b0c3.js.map",
+    "main.ed18bfa2.css.map": "/portfolio/static/css/main.ed18bfa2.css.map",
+    "main.0ebdd606.js.map": "/portfolio/static/js/main.0ebdd606.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d927a27d.css",
-    "static/js/main.7c07b0c3.js"
+    "static/css/main.ed18bfa2.css",
+    "static/js/main.0ebdd606.js"
   ]
 }
