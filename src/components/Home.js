@@ -39,13 +39,12 @@ function Home() {
               </a>
             </li>
           </ul>
-          <p className="gap-after">
+          <p className="gap-after" style={{textAlign: 'center'}}>
             I enjoy getting my hands dirty learning code, tackling any big or small challenges, 
             and at the end of the day, giving my best to get the job done. <br />
-            In my free time I enjoy binge watching TV shows, cooking, going to the gym, 
-            gaming and watching sports such as rugby, NBA, NFL, softball and baseball. <br />
             <br />
-            I also enjoy streaming on Twitch and have participated in Twitch ANZ events such as Grassroots and Te Marama o Maori.
+            In my free time I enjoy binge watching TV shows, cooking, going to the gym, 
+            gaming and watching sports such as rugby, NBA, NFL, softball and sumo wrestling! <br />
           </p>
           </div>
       </motion.div>

@@ -20,7 +20,9 @@ function DangerousDag() {
           <li>Bug fixed a spawn issue on the second level</li>
           <li>Redesigned the main character myself because the "original" made by the tutor was unacceptable</li>
         </ul>
-        <a href="https://github.com/Sh4miya/dangerous-dag">Assignment Code</a>
+        <div className="webstore-links">
+            <a href="https://github.com/Sh4miya/dangerous-dag">Assignment Code</a>
+        </div>
     </>
   );
 }
