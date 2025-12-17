@@ -6,6 +6,7 @@ import NameDatabase from "./experience/NameDatabase";
 import DailyDeals from "./experience/DailyDeals";
 import PlayerWon from "./experience/PlayerWon";
 import XsollaWebstore from "./experience/XsollaWebstore";
+import PolymorphismTask from "./experience/PolymorphismTask";
 import '../style.scss';
 import { motion } from 'framer-motion';
 
@@ -76,6 +77,11 @@ function Experience(){
               </button>
             </li>
             <li className="projects-submenu">
+              <button className="projects-submenu" onClick={() => scrollToProject('polymorphism-task')}>
+                Polymorphism Task
+              </button>
+            </li>
+            <li className="projects-submenu">
               <button className="projects-submenu" onClick={() => scrollToProject('additional-experience')}>
                 Additional Experience
               </button>
@@ -100,6 +106,9 @@ function Experience(){
             </div>
             <div className="grid-item" id="dangerous-dag">
               <DangerousDag />
+            </div>
+            <div className="grid-item" id="polymorphism-task">
+              <PolymorphismTask />
             </div>
             <div className="grid-item" id="additional-experience">
               <Other />
