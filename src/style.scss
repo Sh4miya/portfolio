@@ -380,6 +380,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
 
   .left-align{
@@ -835,6 +836,53 @@ body {
     object-fit: cover;
   }
 
+  .project-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      width: auto;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      object-fit: contain;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    @media #{$phone} {
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      
+      img {
+        max-width: 150px;
+        max-height: 150px;
+      }
+    }
+
+    @media #{$tablet} {
+      gap: 0.875rem;
+      
+      img {
+        max-width: 180px;
+        max-height: 180px;
+      }
+    }
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -877,9 +925,9 @@ body {
       overflow-x: hidden;
     }
 
-    // Laptop layout: 2 columns
+    // Laptop layout: single column
     @media #{$laptop}{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       row-gap: 2rem;
       column-gap: 2rem;
       padding: 2rem;
@@ -888,12 +936,13 @@ body {
     }
 
     @media #{$standard}{
-      grid-template-columns: 55% 20%;
+      grid-template-columns: 1fr;
       row-gap: 2rem;
       column-gap: 2rem;
       padding: 2rem;
       padding-bottom: 5rem;
       width: 90%;
+      max-width: 1200px;
     }
 
     // Override standard at tablet breakpoint to prevent overlap
@@ -948,6 +997,21 @@ body {
       position: relative;
       overflow: visible;
       box-sizing: border-box;
+      
+      // Desktop: limit width for better readability
+      @media #{$laptop} {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        min-width: 0;
+      }
+      
+      @media #{$standard} {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        min-width: 0;
+      }
 
       // Make cards breathe better on small screens
       @media #{$phone}{
@@ -1412,6 +1476,7 @@ body {
 
   .webstore-links {
     text-align: center;
+    font-weight: 500;
     
     a {
       color:rgba(23, 46, 252, 0.7);
@@ -1419,6 +1484,196 @@ body {
       
       &:hover {
         color: blue;
+      }
+    }
+  }
+
+  .code-example-section {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+  }
+
+  .code-example-toggle {
+    background: rgba(179, 240, 248, 0.4);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3748;
+    transition: all 0.3s ease;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    
+    &:hover {
+      background: rgba(23, 27, 252, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(187, 247, 255, 0.4);
+    }
+  }
+
+  .code-example-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    
+    h4 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+  }
+
+  .code-block {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    
+    code {
+      color: #d4d4d4;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
+    @media #{$phone} {
+      max-height: 300px;
+    }
+  }
+
+  .test-code-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(23, 27, 252, 0.09);
+    border-radius: 8px;
+    
+    h4 {
+      color: #ffffff;
+      font-weight: 500;
+      text-align: center;
+    }
+    
+    .form-field {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      
+      label {
+        font-weight: 500;
+        color: #ffffff;
+      }
+      
+      .form-input {
+        padding: 8px 12px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        
+        &:focus {
+          outline: none;
+          border-color: rgba(23, 27, 252, 0.6);
+          box-shadow: 0 0 0 3px rgba(23, 27, 252, 0.1);
+        }
+        
+        &[readonly] {
+          background: #ffffff;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .test-code-button {
+    background: rgba(179, 240, 248, 0.4);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    margin-top: 0.5rem;
+    
+    &:hover {
+      background: rgba(23, 27, 252, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(187, 247, 255, 0.4);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  .test-results {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.8rem;
+    position: relative;
+    
+    .test-results-close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      transition: all 0.2s ease;
+      z-index: 10;
+      
+      &:hover {
+        color: #000000;
+        transform: scale(1.1);
+      }
+      
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+    
+    h4 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: left;
+      font-size: 1.0rem;
+    }
+    
+    .code-block {
+      max-height: 400px;
+      overflow-y: auto;
+      
+      @media #{$phone} {
+        max-height: 300px;
       }
     }
   }

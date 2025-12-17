@@ -1,5 +1,9 @@
 import React from "react";
 import '../../style.scss';
+import ImageModal from '../ImageModal';
+import chatalerts1 from '../../images/message-website.png';
+import chatalerts2 from '../../images/message-ingame.png';
+import chatalerts3 from '../../images/chat-alert-messages.png';
 
 function ChatAlerts(){
     return (
@@ -18,6 +22,17 @@ function ChatAlerts(){
           <li className="chat-alerts">Added authentication - user must be logged in and a developer to use this feature</li>
           <li className="chat-alerts gap-after">Interface created using React</li>
         </ul>
+        <div className="project-thumbnails">
+            <ImageModal src={chatalerts1} alt="Chat alerts web interface">
+                <img src={chatalerts1} alt="Chat alerts web interface" />
+            </ImageModal>
+            <ImageModal src={chatalerts2} alt="Chat alerts in-game screenshot">
+                <img src={chatalerts2} alt="Chat alerts in-game screenshot" />
+            </ImageModal>
+            <ImageModal src={chatalerts3} alt="Chat alerts retrieve sent messages">
+                <img src={chatalerts3} alt="Chat alerts retrieve sent messages" />
+            </ImageModal>
+        </div>
       </>
     );
 

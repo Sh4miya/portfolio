@@ -1,5 +1,9 @@
 import React from "react";
 import '../../style.scss';
+import ImageModal from '../ImageModal';
+import dagtitle from '../../images/dangerous-dag-title.jpg';
+import dag from '../../images/dag-1.jpg';
+import dag2 from '../../images/dag-2.png';
 
 function DangerousDag() {
   return (
@@ -22,6 +26,17 @@ function DangerousDag() {
         </ul>
         <div className="webstore-links">
             <a href="https://github.com/Sh4miya/dangerous-dag">Assignment Code</a>
+        </div>
+        <div className="project-thumbnails">
+            <ImageModal src={dagtitle} alt="Dangerous Dag game title">
+                <img src={dagtitle} alt="Dangerous Dag game title" />
+            </ImageModal>
+            <ImageModal src={dag} alt="Dangerous Dag game screenshot">
+                <img src={dag} alt="Dangerous Dag game screenshot" />
+            </ImageModal>
+            <ImageModal src={dag2} alt="Dangerous Dag game screenshot">
+                <img src={dag2} alt="Dangerous Dag game screenshot" />
+            </ImageModal>
         </div>
     </>
   );

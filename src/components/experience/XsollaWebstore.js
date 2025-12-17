@@ -1,5 +1,8 @@
 import React from "react";
 import '../../style.scss';
+import ImageModal from '../ImageModal';
+import xsollaWebstore1 from '../../images/xsolla-webstore-1.png';
+import xsollaWebstore2 from '../../images/xsolla-webstore-2.png';
 
 function XsollaWebstore(){
     return(
@@ -19,6 +22,14 @@ function XsollaWebstore(){
         <div className="webstore-links">
             <a href="https://store.blackout.football" target="_blank" rel="noopener noreferrer">Blackout Football Webstore</a>
             <a href="https://store.blackout.rugby" target="_blank" rel="noopener noreferrer">Blackout Rugby Webstore</a>
+        </div>
+        <div className="project-thumbnails">
+            <ImageModal src={xsollaWebstore1} alt="Xsolla Webstore">
+                <img src={xsollaWebstore1} alt="Xsolla Webstore" />
+            </ImageModal>
+            <ImageModal src={xsollaWebstore2} alt="Xsolla Webstore">
+                <img src={xsollaWebstore2} alt="Xsolla Webstore" />
+            </ImageModal>
         </div>
     </>
     );

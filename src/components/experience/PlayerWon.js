@@ -1,5 +1,8 @@
 import React from "react";
 import '../../style.scss';
+import ImageModal from '../ImageModal';
+import playerWonAds from '../../images/player-won-ads.png';
+import playerWonAdsSuccess from '../../images/player-won-ads-success.png';
 
 function PlayerWon(){
     return(
@@ -14,6 +17,14 @@ function PlayerWon(){
         <div className="webstore-links">
             <a href="https://store.steampowered.com/app/2187050/Blackout_Football_Manager/" target="_blank" rel="noopener noreferrer">Blackout Football Manager</a>
             <a href="https://store.steampowered.com/app/1157960/Blackout_Rugby__World_Cup_Edition/" target="_blank" rel="noopener noreferrer">Blackout Rugby Manager</a>
+        </div>
+        <div className="project-thumbnails">
+            <ImageModal src={playerWonAds} alt="Player won ads notification">
+                <img src={playerWonAds} alt="Player won ads notification" />
+            </ImageModal>
+            <ImageModal src={playerWonAdsSuccess} alt="Player won ads success">
+                <img src={playerWonAdsSuccess} alt="Player won ads success" />
+            </ImageModal>
         </div>
     </>
     );
