@@ -1,38 +1,84 @@
 import React from "react";
 import '../style.scss';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 function MainMenu() {
     const location = useLocation();
+    const navigate = useNavigate();
+
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (!section) {
+        return;
+      }
+
+      const headerOffset = 90;
+      const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+      });
+    };
+
+    const handleMenuClick = (sectionId) => {
+      if (location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => scrollToSection(sectionId), 120);
+        return;
+      }
+      scrollToSection(sectionId);
+    };
 
     return (
       <>
       <nav className="main-menu-wrapper">
         <ul className="main-menu">       
           <li className="main-menu">
-            <Link 
-              className={`main-menu ${location.pathname === '/' || location.pathname === '' ? 'active' : ''}`}
-              to="/"
+            <button
+              type="button"
+              className="main-menu"
+              onClick={() => handleMenuClick('home-section')}
             >
               Home
-            </Link>
+            </button>
           </li>
           <li className="main-menu">
-            <Link 
-              className={`main-menu ${location.pathname === '/Projects' ? 'active' : ''}`}
-              to="/Projects"
+            <button
+              type="button"
+              className="main-menu"
+              onClick={() => handleMenuClick('work-section')}
+            >
+              Work Experience
+            </button>
+          </li>
+          <li className="main-menu">
+            <button
+              type="button"
+              className="main-menu"
+              onClick={() => handleMenuClick('projects-section')}
             >
               Projects
-            </Link>
+            </button>
           </li>
           <li className="main-menu">
-            <Link 
-              className={`main-menu ${location.pathname === '/Skills' ? 'active' : ''}`}
-              to="/Skills"
+            <button
+              type="button"
+              className="main-menu"
+              onClick={() => handleMenuClick('skills-section')}
             >
               Skills
-            </Link>
+            </button>
+          </li>
+          <li className="main-menu">
+            <button
+              type="button"
+              className="main-menu"
+              onClick={() => handleMenuClick('education-section')}
+            >
+              Education
+            </button>
           </li>
         </ul>
       </nav>
