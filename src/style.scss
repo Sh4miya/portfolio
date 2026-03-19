@@ -440,8 +440,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 800px;
-    width: 90%;
+    max-width: 850px;
+    width: min(92%, 1020px);
     margin-left: auto;
     margin-right: auto;
     padding: 2rem 2.5rem;
@@ -1488,6 +1488,92 @@ body {
     gap: 0.5rem;
   }
 
+  .hero-intro {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: left;
+    width: 100%;
+    @media #{$phone} {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  .hero-cta-primary {
+    display: inline-block;
+    padding: 0.65rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0f172a !important;
+    background: linear-gradient(135deg, #bbf7ff 0%, #7ee8f9 100%);
+    box-shadow: 0 4px 20px rgba(126, 232, 249, 0.35);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Sora', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .hero-cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(126, 232, 249, 0.45);
+    color: #0f172a !important;
+  }
+
+  .home-flex-container-text p.hero-cv-note {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .home-flex-container-text p.hero-cv-note a:link,
+  .home-flex-container-text p.hero-cv-note a:visited {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .home-flex-container-text p.hero-cv-note a:hover {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .work-with-me-lead {
+    text-align: left;
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    @media #{$phone} {
+      text-align: center;
+    }
+  }
+
+  .work-with-me-availability {
+    text-align: left;
+    line-height: 1.65;
+    margin: 0 0 1.1rem;
+    font-size: 0.98rem;
+    color: var(--paua-text-soft);
+    @media #{$phone} {
+      text-align: center;
+    }
+  }
+
+  .work-with-me-list {
+    margin: 0 0 1.25rem;
+    padding-left: 1.25rem;
+    text-align: left;
+    line-height: 1.65;
+    color: rgba(221, 245, 241, 0.92);
+  }
+
+  .work-with-me-cta-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0.35rem 0 1rem;
+  }
+
   .webstore-links {
     text-align: center;
     font-weight: 500;
@@ -1938,6 +2024,164 @@ body {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
   }
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .main-menu-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.48);
+    pointer-events: none;
+  }
+
+  .main-menu-backdrop.is-visible {
+    display: block;
+    pointer-events: auto;
+  }
+
+  .main-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(96, 226, 192, 0.22);
+    border-radius: 10px;
+    background: rgba(14, 35, 43, 0.6);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .main-menu-toggle:hover,
+  .main-menu-toggle:focus-visible {
+    background: rgba(63, 212, 177, 0.12);
+    border-color: rgba(96, 226, 192, 0.38);
+    outline: none;
+  }
+
+  .main-menu-toggle-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background: #dffcf6;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
+  .main-menu-toggle.is-open .main-menu-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .main-menu-toggle.is-open .main-menu-toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .main-menu-toggle.is-open .main-menu-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .main-menu-wrapper {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0.5rem 0.75rem;
+      min-height: 56px;
+      height: auto;
+    }
+
+    .main-menu-toggle {
+      display: flex;
+    }
+
+    ul.main-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      flex-basis: 100%;
+      gap: 0.45rem;
+      padding: 0.6rem 0 1rem;
+      margin: 0.4rem 0 0;
+      border-top: 1px solid rgba(96, 226, 192, 0.12);
+      justify-content: stretch;
+      align-items: stretch;
+    }
+
+    ul.main-menu.is-open {
+      display: flex;
+    }
+
+    li.main-menu {
+      width: 100%;
+      flex-shrink: 1;
+    }
+
+    li.main-menu a.main-menu,
+    li.main-menu button.main-menu {
+      width: 100%;
+      justify-content: flex-start;
+      padding: 12px 14px;
+      white-space: normal;
+      text-align: left;
+      min-width: 0;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .main-menu-backdrop,
+    .main-menu-backdrop.is-visible {
+      display: none !important;
+      pointer-events: none !important;
+    }
+
+    .main-menu-toggle {
+      display: none !important;
+    }
+
+    ul.main-menu {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-basis: auto !important;
+      width: auto !important;
+      max-width: none;
+      border-top: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      gap: 3rem;
+    }
+
+    ul.main-menu.is-open {
+      display: flex !important;
+    }
+
+    li.main-menu a.main-menu,
+    li.main-menu button.main-menu {
+      width: auto !important;
+      justify-content: center !important;
+      text-align: center !important;
+      white-space: nowrap !important;
+      min-width: max-content !important;
+    }
+  }
+
   li.main-menu a.main-menu,
   li.main-menu button.main-menu {
     background: transparent;
@@ -1955,6 +2199,45 @@ body {
     background: rgba(63, 212, 177, 0.16);
     border-color: rgba(96, 226, 192, 0.3);
     box-shadow: none;
+  }
+
+  .main-menu-cta-item {
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  li.main-menu button.main-menu.main-menu-cta {
+    background: linear-gradient(135deg, #bbf7ff 0%, #7ee8f9 100%);
+    border: none;
+    color: #0f172a !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Sora', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    box-shadow: 0 4px 20px rgba(126, 232, 249, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  li.main-menu button.main-menu.main-menu-cta:hover,
+  li.main-menu button.main-menu.main-menu-cta:focus-visible {
+    background: linear-gradient(135deg, #bbf7ff 0%, #7ee8f9 100%);
+    border: none;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(126, 232, 249, 0.45);
+    color: #0f172a !important;
+    outline: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    li.main-menu button.main-menu.main-menu-cta {
+      width: auto;
+      min-width: 0;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+    }
   }
 
   .grid-container {
@@ -2099,6 +2382,15 @@ body {
     scroll-margin-top: 120px;
   }
 
+  // Full-width card within the same grid shell as other sections (other .grid-items stay max 850px)
+  #contact-section .grid-item {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
   .projects-group-title {
     margin: 0 0 1.1rem 0;
     padding-bottom: 0.45rem;
@@ -2165,26 +2457,6 @@ body {
   @media #{$phone} {
     .header-content {
       letter-spacing: 0.01em;
-    }
-
-    .main-menu-wrapper {
-      height: 78px;
-      background: rgba(5, 17, 22, 0.9);
-    }
-
-    ul.main-menu {
-      gap: 0.55rem;
-      width: 100%;
-      padding: 0 0.75rem;
-      box-sizing: border-box;
-    }
-
-    li.main-menu a.main-menu,
-    li.main-menu button.main-menu {
-      min-width: 0;
-      width: 100%;
-      font-size: 0.82rem;
-      padding: 9px 10px;
     }
 
     .home-flex-container-text,

@@ -28,7 +28,8 @@ function DailyDeals() {
     <>
       <h2 className="no-gap-after">Implement Daily Deals</h2>
       <p className="experience-preview">
-        Designed and implemented a rotating daily deals system with backend generation logic, eligibility checks, and frontend integration.
+        Designed and implemented a rotating daily deals system with backend
+        generation logic, eligibility checks, and frontend integration.
       </p>
       <div className="project-thumbnails">
         <ImageModal src={groundsShop} alt="Grounds shop with new alert">
@@ -44,15 +45,13 @@ function DailyDeals() {
 
       {showDetails && (
         <div className="collapsible-content">
-          <h3>Blackout Games<br /> Task Responsibilities:</h3>
+          <h3>Blackout Games<br /> Responsibilities:</h3>
           <ul className="left-align">
-            <li>Create a daily deal based on a range of items from the in-game store</li>
-            <li>Write code that will generate a random amount of daily deals to offer to the user</li>
-            <li>Write engine code that will automatically generate daily deals for the user every 3 days and store them on Redis</li>
-            <li>Perform checks to ensure the user is offered appropriate deals (Premium vs. Standard)</li>
-            <li>Allow for deals to be swapped out if certain criteria is not met</li>
-            <li>Add frontend handling in Unity based on daily deal data provided via API</li>
-            <li>Add indicator to show when the user has a daily deal available</li>
+            <li>Built the backend logic to generate rotating daily deals from the in-game store catalog</li>
+            <li>Implemented scheduling and persistence so deals refreshed automatically on a fixed cycle</li>
+            <li>Added eligibility checks for different player states, including premium and standard users</li>
+            <li>Handled fallback logic when a generated deal did not meet the required criteria</li>
+            <li>Integrated the API response into the Unity client and added a UI indicator for available deals</li>
           </ul>
           <div className="webstore-links">
             <a href="https://store.steampowered.com/app/2187050/Blackout_Football_Manager/" target="_blank" rel="noopener noreferrer">Blackout Football Manager</a>

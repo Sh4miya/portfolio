@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import profile from "../images/profile_picture_2.jpg";
 import github from "../images/github-mark-white.png";
 import linkedin from "../images/In-Blue-40.png";
-import cv from "../images/cv.png";
 import email from "../images/email.png";
+import { CONTACT_MAILTO } from "../contact";
 
 const introReveal = {
   hidden: { opacity: 0, y: 30 },
@@ -36,29 +36,36 @@ function HeroSection() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <h1>Lizzie Corbett</h1>
-        <h2 className="center">Full Stack Developer</h2>
+        <h2 className="center">About me</h2>
+        <p className="gap-after hero-intro">
+          I&apos;m a full-stack developer with several years building and shipping
+          production game and backend systems. I enjoy getting my hands dirty
+          with code, tackling challenges big or small, and seeing work through
+          from implementation to release.
+        </p>
         <ul className="center no-bullet home-info">
           <li className="home-info-item">Ngati Porou</li>
           <li className="home-info-item">Hamilton, New Zealand</li>
           <li className="social-links">
-            <a className="email" href="mailto:lizzie.corbett04@gmail.com" aria-label="Email">
-              <img className="logo" src={email} alt="E-Mail Logo"></img>
+            <a className="email" href={CONTACT_MAILTO} aria-label="Email">
+              <img className="logo" src={email} alt=""></img>
             </a>
             <a href="https://github.com/Sh4miya" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-              <img className="logo" src={github} alt="Github Logo"></img>
+              <img className="logo" src={github} alt=""></img>
             </a>
             <a href="https://www.linkedin.com/in/lizzie-corbett/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-              <img className="logo" src={linkedin} alt="LinkedIn Logo"></img>
-            </a>
-            <a href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view" aria-label="CV" target="_blank" rel="noopener noreferrer">
-              <img className="logo cv-logo" src={cv} alt="CV Logo"></img>
+              <img className="logo" src={linkedin} alt=""></img>
             </a>
           </li>
         </ul>
-        <p className="gap-after" style={{ textAlign: "center" }}>
-          Full-stack developer with 3 years' experience building and shipping production game and backend systems.
-          I enjoy getting my hands dirty learning code, tackling any big or small challenges,
-          and at the end of the day, giving my best to get the job done.
+        <p className="hero-cv-note">
+          <a
+            href="https://www.canva.com/design/DAEsqSxePVI/DWuzTp-ZO_Qcz2gubBt1hA/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View CV
+          </a>
         </p>
       </motion.div>
     </>
