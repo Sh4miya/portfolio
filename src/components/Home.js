@@ -22,7 +22,35 @@ const sectionReveal = {
   }
 };
 
+const selectedProjects = [
+  { id: "invites-only", label: "Invites Only" },
+  { id: "name-database", label: "Name Database" },
+  { id: "dangerous-dag", label: "Dangerous Dag" },
+  { id: "polymorphism-task", label: "Polymorphism Task" },
+];
+
 function Home() {
+  const scrollToProject = (projectId) => {
+    const project = document.getElementById(projectId);
+    if (!project) {
+      return;
+    }
+
+    const mainMenuHeight =
+      document.querySelector(".main-menu-wrapper")?.getBoundingClientRect()
+        .height ?? 70;
+    const submenuHeight =
+      document
+        .querySelector(".projects-submenu-wrapper")
+        ?.getBoundingClientRect().height ?? 0;
+    const projectTop = project.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: projectTop - mainMenuHeight - submenuHeight - 24,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <motion.div
@@ -46,6 +74,21 @@ function Home() {
           <div className="header-container fade-in">
             <h1 className="header-content gap-after">Selected Projects</h1>
           </div>
+          <nav className="projects-submenu-wrapper" aria-label="Selected projects">
+            <ul className="projects-submenu">
+              {selectedProjects.map(({ id, label }) => (
+                <li className="projects-submenu" key={id}>
+                  <button
+                    type="button"
+                    className="projects-submenu"
+                    onClick={() => scrollToProject(id)}
+                  >
+                    {label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
           <div className="grid-container fade-in">
             <ExperienceProjects sectionReveal={sectionReveal} />
           </div>

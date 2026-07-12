@@ -2,6 +2,8 @@ import React from "react";
 import ImageModal from "../ImageModal";
 import invitesOnly1 from "../../images/invites-only-1.jpg";
 import invitesOnly2 from "../../images/invites-only-2.jpg";
+import invitesOnly3 from "../../images/invites-only-3.jpg";
+import invitesOnly4 from "../../images/invites-only-4.jpg";
 
 function InvitesOnly() {
   return (
@@ -55,6 +57,12 @@ function InvitesOnly() {
           </ImageModal>
           <ImageModal src={invitesOnly1} alt="InvitesOnly app screenshot">
             <img src={invitesOnly1} alt="InvitesOnly app screenshot" />
+          </ImageModal>
+          <ImageModal src={invitesOnly3} alt="InvitesOnly app screenshot">
+            <img src={invitesOnly3} alt="InvitesOnly app screenshot" />
+          </ImageModal>
+          <ImageModal src={invitesOnly4} alt="InvitesOnly app screenshot">
+            <img src={invitesOnly4} alt="InvitesOnly app screenshot" />
           </ImageModal>
         </div>
       </div>
